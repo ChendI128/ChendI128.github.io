@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>自适应屏幕的网页</title>
+	<style>
+		/* 设置全局样式 */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		
+		/* 设置顶部区域的样式 */
+		#header {
+			background-image: url(bj.jpg); /* 设置背景图片 */
+			background-size: cover; /* 让背景图片自适应屏幕 */
+			height: 20vh; /* 设置高度为屏幕高度的20% */
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			font-size: 45px;  /* 顶部区域字体大小 */
+			text-align: center;
+			margin-bottom: 2vh; /* 添加底部间隔 */
+		}
+		
+		/* 设置中间区域的样式 */
+		#content {
+			height: 28vh; /* 设置高度为屏幕高度的28% */
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: flex-start;
+			padding: 0 20px;
+			position: relative; /* 添加相对定位 */
+			margin-bottom: 2vh; /* 添加底部间隔 */
+		}
+		
+		/* 设置中间区域文本行的样式 */
+		#content p {
+			margin: 0;
+			padding: 0;
+			font-size: 28px; /* 中间区域字体大小 */
+			line-height: 1.5;
+			border-bottom: 1px solid #ccc;
+			width: 100vw; /* 将宽度设置为视口宽度 */
+		}
+		
+		
+		/* 设置底部区域的样式 */
+		#footer {
+			height: 43vh; /* 设置高度为屏幕高度的43% */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		/* 设置底部区域图片的样式 */
+		#footer img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- 顶部区域 -->
+	<div id="header">
+		道路指路标志
+	</div>
+	
+	<!-- 中间区域 -->
+	<div id="content">
+		<p>线路编码：国道G235</p>
+		<p>唯一编码：G23G-A-0001</p>
+		<p>位置桩号：K500+822000</p>
+		<p>标志方向：上行</p>
+		<p>支撑方式：单悬臂式</p>
+		<p>标志类型：禁令标注-限速60km/h</p>
+		<hr> <!-- 添加浅色分割线 -->
+	</div>
+	
+	<!-- 底部区域 -->
+	<div id="footer">
+		<img src="zlbz1.jpg" alt="底部图片">
+	</div>
+	
+</body>
+</html>
